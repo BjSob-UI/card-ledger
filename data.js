@@ -32,6 +32,7 @@ const DATA = {
     { id: "p-oona",  card: "platinum", name: "Oona Insurance", amount: 1447.63, first: "2026-10", count: 4, seq: { start: 3, total: 6 }, overrides: { "2026-11": 3233.63 } },
     { id: "p-cash1", card: "platinum", name: "Cash Installment (12 months)", amount: 15617.97, first: "2026-10", count: 11, seq: { start: 2,  total: 12 } },
     { id: "p-cash2", card: "platinum", name: "Cash Installment (24 months)", amount: 2308.40,  first: "2026-10", count: 10, seq: { start: 15, total: 24 } },
+    { id: "p-adj-nov", card: "platinum", name: "Other charges / adjustment (to match statement)", amount: 6653.47, first: "2026-11", count: 1, once: true, added: true },
     /* Gold Mastercard */
     { id: "g-sm1",   card: "gold", name: "SM Store Installment", amount: 2179,    first: "2026-10", count: 1, seq: { start: 3, total: 3 } },
     { id: "g-adv",   card: "gold", name: "Cash Advance",          amount: 554.02,  first: "2026-10", count: 10, seq: { start: 15, total: 24 } },
