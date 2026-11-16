@@ -23,7 +23,7 @@ function buildLedger(today) {
   DATA.conversions.forEach(cv => {
     const i0 = idxOf(cv.month); if (i0 < 0 || i0 >= N) return;
     const base = months[i0].cards[cv.card].lines.reduce((s, l) => s + l.amount, 0);
-    const per = base * (1 + cv.ratePct * cv.months / 100) / cv.months;
+    const per = cv.payment !== undefined ? cv.payment : base * (1 + cv.ratePct * cv.months / 100) / cv.months;
     for (let j = 0; j < cv.months; j++) {
       const i = idxOf(cv.from) + j; if (i < 0 || i >= N) continue;
       months[i].cards[cv.card].lines.push({ id: "conv-" + cv.card, name: cv.name, amount: per, seq: { n: j + 1, of: cv.months }, added: false, once: false, converted: false, isConversion: true });
