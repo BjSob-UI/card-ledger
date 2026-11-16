@@ -18,7 +18,7 @@ const DATA = {
   /* optional real balances; leave null to use remaining installments as the estimate */
   actualBalance: { platinum: null, gold: null, bpi: null },
   /* payments you made that differ from "paid on the due date": { card: { "YYYY-MM": amount } } */
-  paymentOverrides: { bpi: { "2026-10": 4440 }, platinum: { "2026-11": 22409.17 } },
+  paymentOverrides: { bpi: { "2026-10": 4440 }, gold: { "2026-11": 13601.77 } },
   /* a whole month's bill turned into instalments */
   conversions: [
     { card: "platinum", month: "2026-10", ratePct: 0.48, months: 6, from: "2026-12", payment: 8089.46, name: "Balance Convert (October bill)" }
